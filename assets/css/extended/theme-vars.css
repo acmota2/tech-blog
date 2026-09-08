@@ -1,0 +1,7 @@
+:root {
+  --main-width: 1200px;
+}
+
+.post-content .highlight {
+    max-width: 85%;
+}

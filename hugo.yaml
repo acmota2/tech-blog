@@ -1,0 +1,53 @@
+title: "André Mota"
+theme: ["PaperMod"]
+enableRobotsTXT: true
+
+menu:
+  main:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 10
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 20
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 30
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: André Mota
+  description: "My Tech Blog"
+  keywords: [Blog, Portfolio, PaperModX]
+  author: Me
+  # author: ["Me", "You"] # multiple authors
+  images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "2 January, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+  ShowReadingTime: true
+
+  profileMode:
+    enabled: true # needs to be explicitly set
+    title: André Mota
+    subtitle: "Welcome to my _internet corner_"
+    # imageUrl: ""
+    # imageWidth: 120
+    # imageHeight: 120
+    # imageTitle: my image
+    buttons:
+      - name: Know more
+        url: about
+      - name: Projects
+        url: projects
+      - name: Posts
+        url: posts
+
+  socialIcons:
+    - name: Linkedin
+      url: "https://linkedin.com/in/acmota2/"
+    - name: Github
+      url: "https://github.com/acmota2"
