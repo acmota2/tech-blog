@@ -1,0 +1,11 @@
+{{- $repo := .Get "repo" -}}
+{{- $branch := .Get "branch" | default "main" -}}
+{{- $url := printf "https://raw.githubusercontent.com/%s/%s/README.md" $repo $branch -}}
+{{- $readme := resources.GetRemote $url -}}
+
+{{- if $readme -}}
+  <p><em>Loaded from the repository's README</em></p>
+  {{- $readme.Content | markdownify -}}
+{{- else -}}
+  <p><em>Unable to load README from GitHub.</em></p>
+{{- end -}}
