@@ -1,5 +1,5 @@
 +++
-draft = true
+draft = false
 title = 'Blaze'
 summary = 'NixOS machine declarations of my homelab'
 github = 'https://github.com/acmota2/blaze'
